@@ -1,6 +1,7 @@
 package controler
 
 import (
+	"encoding/hex"
 	"log"
 	"net/http"
 	"os"
@@ -44,7 +45,7 @@ func StorageContract(context *gin.Context) {
 		Hash:     tx.Hash().Hex(),
 		Value:    tx.Value().String(),
 		Gas:      tx.Gas(),
-		Data:     string(tx.Data()),
+		Data:     hex.EncodeToString(tx.Data()),
 		GasPrice: tx.GasPrice().Uint64(),
 	}
 	context.JSON(http.StatusCreated, gin.H{"transaction": txResponse})

@@ -2,6 +2,7 @@ package service
 
 import (
 	"context"
+	"encoding/hex"
 	"log"
 	"math/big"
 
@@ -32,7 +33,7 @@ func GetHeader() *models.Block {
 		_block.Transactions = append(_block.Transactions, models.Transaction{
 			Hash:     tx.Hash().String(),
 			Value:    tx.Value().String(),
-			Data:     string(tx.Data()),
+			Data:     hex.EncodeToString(tx.Data()),
 			Gas:      tx.Gas(),
 			GasPrice: tx.GasPrice().Uint64(),
 		})
