@@ -1,0 +1,97 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "company",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "identity_card",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "hash_docs",
+						"type": "string"
+					}
+				],
+				"name": "addContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "identity_card",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "company",
+						"type": "string"
+					}
+				],
+				"name": "getContract",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contract/storagedoc.sol": "StorageContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contract/storagedoc.sol": {
+			"keccak256": "0xb566761475ccfcf6f1ea42c6b38da4f28b4e59c1c789045e24cd2a1094b415e7",
+			"urls": [
+				"bzz-raw://150c5c7496390405dc2ff30dfdeb2e3df35ad53bab81b29e1d9ab24acf84aebd",
+				"dweb:/ipfs/QmdM3ouy9dtWsmspZd5RnSbn8LZDtiggXxxYNRquzXkLjX"
+			]
+		}
+	},
+	"version": 1
+}
